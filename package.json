@@ -1,0 +1,24 @@
+{
+  "name": "snowand",
+  "version": "1.0.0",
+  "description": "bootstrap front end template",
+  "main": "index.html",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissallopes/Snowand-bootstrap4.git"
+  },
+  "author": "Melissa Lopes de Pina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melissallopes/Snowand-bootstrap4/issues"
+  },
+  "homepage": "https://melissallopes.github.io/Snowand-bootstrap4"
+}
