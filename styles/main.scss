@@ -4,7 +4,35 @@
   font-family: "enso";
   src: url("../fonts/enso.ttf");
 }
+@font-face {
+  font-family: "SalesforceSans-Regular";
+  src: url("//db.onlinewebfonts.com/t/0fadaa21fcac88ceee0bb8da992c221b.eot");
+  src: url("//db.onlinewebfonts.com/t/0fadaa21fcac88ceee0bb8da992c221b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0fadaa21fcac88ceee0bb8da992c221b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/0fadaa21fcac88ceee0bb8da992c221b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/0fadaa21fcac88ceee0bb8da992c221b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/0fadaa21fcac88ceee0bb8da992c221b.svg#SalesforceSans-Regular")
+      format("svg");
+}
 
+@font-face {
+  font-family: "ITCAvantGardeW04-Demi";
+  src: url("//db.onlinewebfonts.com/t/2d1d3d5c6e16809e9aaeb413f0687ebc.eot");
+  src: url("//db.onlinewebfonts.com/t/2d1d3d5c6e16809e9aaeb413f0687ebc.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2d1d3d5c6e16809e9aaeb413f0687ebc.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/2d1d3d5c6e16809e9aaeb413f0687ebc.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/2d1d3d5c6e16809e9aaeb413f0687ebc.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/2d1d3d5c6e16809e9aaeb413f0687ebc.svg#ITCAvantGardeW04-Demi")
+      format("svg");
+}
 // *,
 // * *:after {
 //   color: rgba(0, 0, 0, 0.6);
@@ -12,6 +40,13 @@
 
 body {
   color: rgba(0, 0, 0, 0.6);
+  font-family: SalesforceSans-Regular;
+}
+
+.d-block.w-100 {
+  vertical-align: middle;
+  max-height: 650px;
+  object-fit: cover;
 }
 
 .selector-for-some-widget {
@@ -23,13 +58,13 @@ body {
   font-size: 2vw;
   color: #469fc2 !important;
 }
-.navbar-brand-sm {
-  font-size: 2vw;
-  color: #469fc2 !important;
-}
 
 .navbar-toggler-icon {
   color: #469fc2 !important;
+}
+
+.nav-link {
+  text-align: center;
 }
 
 .ttle {
@@ -60,7 +95,6 @@ body {
 .card {
   border: none;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 0;
   width: fit-content;
 }
 
@@ -73,8 +107,7 @@ body {
 }
 
 .card-img-top {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-radius: 10px;
 }
 
 .container-lg {
@@ -161,6 +194,10 @@ hr {
   color: #ffffff;
 }
 
+.menu-social {
+  display: none;
+}
+
 .form-control {
   border-radius: 0;
   padding: 0.6em 0.75em;
@@ -178,6 +215,8 @@ hr {
   font-weight: 300;
   margin: 3% 0 8% 0;
   line-height: 1.3em;
+  font-size: 1.5rem;
+  padding: 10px 0 20px 0;
 }
 @include medium {
   // .row {
@@ -200,6 +239,15 @@ hr {
   }
 }
 
-// .text {
+@include small {
+  .navbar-brand-sm {
+    font-size: 6vw;
+  }
+  .row {
+    flex-direction: column;
+  }
 
-// }
+  .social-media {
+    display: none;
+  }
+}
