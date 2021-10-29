@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/melissallopes/Snowand-bootstrap4.git"
+    "url": "https://github.com/melissallopes/snowand.git"
   },
   "author": "Melissa Lopes de Pina",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/melissallopes/Snowand-bootstrap4/issues"
+    "url": "https://github.com/melissallopes/snowand/issues"
   },
-  "homepage": "https://melissallopes.github.io/Snowand-bootstrap4"
+  "homepage": "https://melissallopes.github.io/snowand"
 }
